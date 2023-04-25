@@ -10,11 +10,11 @@ public class Move : MonoBehaviour
 
     void Start()
     {
-        goal = goal * 0.1f;
+       // goal = goal * 0.1f;
     }
 
     void Update()
     {
-        this.transform.Translate(goal.normalized * speed);
+        this.transform.Translate(goal.normalized * speed * Time.deltaTime);
     }
 }
