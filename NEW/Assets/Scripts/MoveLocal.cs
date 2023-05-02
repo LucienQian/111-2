@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +6,8 @@ public class MoveLocal : MonoBehaviour
 {
     public float speed = 1.0f;
     public Transform goal;
-    public float closePoint = 1;
-
+    public float closePoint = 1f;
+    public float rotSpeed = 0.5f;
     void Start()
     {
         
@@ -15,20 +15,22 @@ public class MoveLocal : MonoBehaviour
 
     void Update()
     {
-        //·s¦V¶q(¤ô¥­)
+        //æ–°å‘é‡(æ°´å¹³)
         Vector3 lookAtGoal = new Vector3(goal.position.x, this.transform.position.y, goal.position.z);
 
         //this.transform.LookAt(goal.position);
 
-        //ÂÂ¦V¶q(¥i¶É±×)
-        Vector3 direction = goal.position - this.transform.position;//¥Ø¼Ğª«ªº¦V¶q
+        //èˆŠå‘é‡(å¯å‚¾æ–œ)
+        Vector3 direction = goal.position - this.transform.position;//ç›®æ¨™ç‰©çš„å‘é‡
         Debug.DrawRay(this.transform.position, direction, Color.blue);
 
-        this.transform.LookAt(lookAtGoal);
+        // this.transform.LookAt(lookAtGoal);
 
-        if(direction.magnitude > closePoint)
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * rotSpeed);
+
+        if(Vector3.Distance(this.transform.position, lookAtGoal) > closePoint)
         {
-            this.transform.Translate(direction.normalized * speed * Time.deltaTime);//íL«Í²¾°Ê
+            this.transform.Translate(direction.normalized * speed * Time.deltaTime);//æ®­å±ç§»å‹•
         }
 
     }
