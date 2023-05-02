@@ -15,9 +15,17 @@ public class MoveLocal : MonoBehaviour
 
     void Update()
     {
-        this.transform.LookAt(goal.position);
+        //新向量(水平)
+        Vector3 lookAtGoal = new Vector3(goal.position.x, this.transform.position.y, goal.position.z);
+
+        //this.transform.LookAt(goal.position);
+
+        //舊向量(可傾斜)
         Vector3 direction = goal.position - this.transform.position;//目標物的向量
-        Debug.DrawRay(this.transform.position, direction, Color.red);
+        Debug.DrawRay(this.transform.position, direction, Color.blue);
+
+        this.transform.LookAt(lookAtGoal);
+
         if(direction.magnitude > closePoint)
         {
             this.transform.Translate(direction.normalized * speed * Time.deltaTime);//殭屍移動
