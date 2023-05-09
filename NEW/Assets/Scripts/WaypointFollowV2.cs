@@ -31,6 +31,7 @@ public class WaypointFollowV2 : MonoBehaviour
         Vector3 directionVertical = lookAtGoal - circuit.Waypoints[currentWP].transform.position;
         Debug.DrawRay(this.transform.position, direction, Color.green);
         Debug.DrawRay(circuit.Waypoints[currentWP].transform.position, directionVertical, Color.red);
+ 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation,
                                                 Quaternion.LookRotation(direction),
                                                 Time.deltaTime * rotSpeed);
