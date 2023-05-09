@@ -24,6 +24,7 @@ public class WaypointFollow : MonoBehaviour
         Vector3 direction = lookAtGoal - this.transform.position;
         Vector3 directionVertical = lookAtGoal - goal.transform.position; 
         Debug.DrawRay(this.transform.position, direction, Color.green);
+        Debug.DrawRay(goal.transform.position, directionVertical, Color.red);
 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation,
                                                 Quaternion.LookRotation(direction),
