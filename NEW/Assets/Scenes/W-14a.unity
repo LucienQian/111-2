@@ -220,7 +220,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &203546675
 Animator:
@@ -242,6 +242,63 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &598068156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.48
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_Name
+      value: Zombiegirl W Kurniawan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
 --- !u!1 &641363565
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,37 +485,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 01b4079366526724f817e2f0cfb7457d, type: 3}
   m_PrefabInstance: {fileID: 1910954230}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &788644569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788644566}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d6ce4d29e14d9a4b943f8c24bf3e299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goal: {fileID: 2120387666}
---- !u!114 &788644570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788644566}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05aebd1c660c735489bf2f0251e261c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: []
-  currentWP: 0
-  speed: 5
-  closePoint: 0.5
-  rotSpeed: 5
---- !u!114 &788644572
+--- !u!114 &788644567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,16 +494,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 788644566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e110bf53d9c9e343a610f81389eb67f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d6ce4d29e14d9a4b943f8c24bf3e299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circuit: {fileID: 2042728436}
+  goal: {fileID: 0}
+--- !u!114 &788644568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788644566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a0ffe9a613608429e3c101a33ccf75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circuit: {fileID: 0}
   currentWP: 0
   speed: 1
   closePoint: 0.5
   rotSpeed: 5
-  animEnemy: {fileID: 0}
-  animProgram: {fileID: 0}
 --- !u!1 &932398837
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 77.367, y: -60.687, z: -54.177}
 --- !u!1 &1550769702
 GameObject:
@@ -1263,7 +1301,7 @@ Transform:
   - {fileID: 1857162528}
   - {fileID: 1653758533}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2042728436
 MonoBehaviour:
@@ -1286,39 +1324,3 @@ MonoBehaviour:
     - {fileID: 1857162528}
     - {fileID: 1653758533}
 }
-  smoothRoute: 1
-  numPoints: 7
-  points:
-  - {x: -9.239635, y: 1.5818806, z: 12.254796}
-  - {x: -5.8596354, y: 1.5518804, z: -9.605205}
-  - {x: -12.599635, y: 1.5518804, z: 7.0647955}
-  - {x: 7.9703655, y: 1.5518804, z: -8.975204}
-  - {x: -5.5, y: 1.5518804, z: -24.05}
-  - {x: -26.1, y: 1.5518804, z: -12}
-  - {x: -27.019634, y: 1.5518804, z: 8.434795}
-  - {x: -9.239635, y: 1.5818806, z: 12.254796}
-  distances:
-  - 0
-  - 22.119785
-  - 40.100792
-  - 66.185394
-  - 86.40173
-  - 110.26724
-  - 130.72272
-  - 148.90848
-  editorVisualisationSubsteps: 100
-  <Length>k__BackingField: 148.90848
-  p0n: 5
-  p1n: 6
-  p2n: 0
-  p3n: 1
-  i: 0.9731059
-  P0: {x: -26.1, y: 1.5518804, z: -12}
-  P1: {x: -27.019634, y: 1.5518804, z: 8.434795}
-  P2: {x: -9.239635, y: 1.5818806, z: 12.254796}
-  P3: {x: -5.8596354, y: 1.5518804, z: -9.605205}
---- !u!4 &2120387666 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8277168862623328093, guid: 01b4079366526724f817e2f0cfb7457d, type: 3}
-  m_PrefabInstance: {fileID: 1910954230}
-  m_PrefabAsset: {fileID: 0}
