@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombiegirl W Kurniawan
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5d70836b0ad0e7140bb25a177fc7dc8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c66d44d362bead4dbc236dbbeab75f2, type: 3}
 --- !u!1 &641363565
