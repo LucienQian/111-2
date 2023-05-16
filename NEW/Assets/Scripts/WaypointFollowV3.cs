@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WaypointFollowV3 : MonoBehaviour
 {
-    [Header("掛上路徑父物件")]
+    [Header("掛上路徑副物件")]
     public UnityStandardAssets.Utility.WaypointCircuit circuit;
     [Header("追擊目標索引")]
     public int currentWP = 0;
@@ -19,11 +19,12 @@ public class WaypointFollowV3 : MonoBehaviour
     [Header("旋轉速度"), Range(0, 5)]
     public float rotSpeed = 5;
 
-
+    public Animator enemyAnim;
 
     void Start()
     {
 
+        enemyAnim = GetComponent<Animator>();
     }
 
 
@@ -58,6 +59,15 @@ public class WaypointFollowV3 : MonoBehaviour
         }
 
         this.transform.Translate(0, 0, speed * Time.deltaTime); //物件向前移動方式
+    }
+
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("tag-attack"))
+        {
+            enemyAnim.SetTrigger("Anim_attack");
+        }
     }
 
 }

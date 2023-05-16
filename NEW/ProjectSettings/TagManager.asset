@@ -6,6 +6,7 @@ TagManager:
   tags:
   - way-point
   - tag-waypoint
+  - tag-attack
   layers:
   - Default
   - TransparentFX
