@@ -422,6 +422,37 @@ MonoBehaviour:
   speed: 1
   closePoint: 0.5
   rotSpeed: 5
+  enemyAnim: {fileID: 0}
+--- !u!136 &640857029
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640857025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2333228
+  m_Height: 2.108527
+  m_Direction: 1
+  m_Center: {x: -0.0023179054, y: 1.0052594, z: 0.0049877167}
+--- !u!54 &640857030
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640857025}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &641363565
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6ce4d29e14d9a4b943f8c24bf3e299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal: {fileID: 0}
+  goal: {fileID: 2042728435}
 --- !u!114 &788644568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,6 +827,7 @@ MonoBehaviour:
   speed: 1
   closePoint: 0.5
   rotSpeed: 5
+  enemyAnim: {fileID: 0}
 --- !u!1 &932398837
 GameObject:
   m_ObjectHideFlags: 0
